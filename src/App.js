@@ -84,7 +84,6 @@ const App = () => {
         // new food
         let newFood = [...food];
         newFood[i] = getFood(i + 1);
-        console.log(newFood);
         setFood(newFood);
         return true;
       }

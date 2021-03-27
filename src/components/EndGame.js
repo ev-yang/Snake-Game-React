@@ -5,8 +5,8 @@ const EndGame = ({score, reset}) => {
         <div className="end-game">
             <h2>Game over!</h2>
             <p>Your score: {score}</p>
-            <Link to={process.env.PUBLIC_URL + "/play"} onClick={reset}>Play again</Link>
-            <Link to={process.env.PUBLIC_URL + "/"} onClick={reset}>Home</Link>
+            <Link to="/play" onClick={reset}>Play again</Link>
+            <Link to="/" onClick={reset}>Home</Link>
         </div>
     );
 }

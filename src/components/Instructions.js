@@ -7,7 +7,7 @@ const Instructions = () => {
             <p>Use the arrow keys to control the direction of the snake (<span className="green">green</span> squares).</p>
             <p>Eat the food (<span className="blue">blue</span> squares) to grow longer.</p>
             <p>Avoid running into yourself or the game borders.</p>
-            <Link to={process.env.PUBLIC_URL + "/"}>Back</Link>
+            <Link to="/">Back</Link>
         </div>
     );
 }

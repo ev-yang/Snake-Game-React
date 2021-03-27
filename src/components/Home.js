@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div className="menu">
             <Header/>
-            <Link to={process.env.PUBLIC_URL + "/play"}>Start game</Link>
-            <Link to={process.env.PUBLIC_URL + "/instructions"}>Instructions</Link>
+            <Link to="/play">Start game</Link>
+            <Link to="/instructions">Instructions</Link>
         </div>
     );
 }
