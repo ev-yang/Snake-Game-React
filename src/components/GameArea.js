@@ -9,7 +9,7 @@ const GameArea = ({snake, food, move, gameOver, reset}) => {
     return (
         <Router>
         <div className="game-area">
-            <Route path="/" exact render={() => (<Home/>)}/>
+            <Route path="/" exact render={() => (<Home reset={reset}/>)}/>
             <Route path="/instructions" exact component={Instructions}/>
             <Route path="/play" exact>
                 {gameOver ? <Redirect to="/end"/> : <Play snake={snake} food={food} move={move}/>}

@@ -94,7 +94,7 @@ const App = () => {
   // check if snake hit border or self. if so, end game.
   function checkGameOver(snake) {
     let front = snake[snake.length - 1];
-    if (front.x < 0 || front.y < 0 || front.x > 100 || front.y > 100) {
+    if (front.x < 0 || front.y < 0 || front.x > 98 || front.y > 98) {
       setGameOver(true);
       return true;
     }
@@ -108,10 +108,10 @@ const App = () => {
     return false;
   }
 
-  // random coordinates for food from 0 to 50
+  // random coordinates for food
   function getFood(id) {
-    let x = Math.floor((Math.random() * 50)) * 2;
-    let y = Math.floor((Math.random() * 50)) * 2;
+    let x = Math.floor((Math.random() * 49)) * 2;
+    let y = Math.floor((Math.random() * 49)) * 2;
     return {
       id: id,
       x: x,
